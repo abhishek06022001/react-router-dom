@@ -2,7 +2,9 @@ import React from 'react'
 
 function Contacts() {
     return (
-        <div>Contacts</div>
+        <div
+        className='bg-red-700'
+        >Contacts</div>
     )
 }
 
