@@ -8,6 +8,7 @@ import NoPage from './pages/NoPage'
 import About from './pages/About'
 import Dashboard from './pages/Dashboard'
 import MiniBlog from './pages/MiniBlog'
+import Login from './pages/Login'
 function App() {
   return (
     <>
@@ -15,13 +16,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            {/* outlet doubt here in this dude  */}
             <Route path="blogs" element={<Blogs />} >
-
+              <Route path=':id' element={<MiniBlog />} />
             </Route>
-            <Route path='blogs/:id' element={<MiniBlog />} />
             <Route path="contacts" element={<Contacts />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="about" element={<About />} />
+            <Route path="login" element={<Login />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bgContact {
+  background-image: url("./assets//cityscape-night-buildings-city-lights-night-city-dark-sky-2880x1800-8289.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+}
